@@ -73,4 +73,71 @@ void main() {
   if ((p > 5 && q < 15) || (p < 10 && q > 10)) {
     print('Complex condition is true');
   }
+
+  /// Switch Case
+  int day = 3;
+  switch (day) {
+    case 1:
+      print('Monday');
+      break;
+    case 2:
+      print('Tuesday');
+      break;
+    case 3:
+      print('Wednesday');
+      break;
+    case 4:
+      print('Thursday');
+      break;
+    case 5:
+      print('Friday');
+      break;
+    case 6:
+      print('Saturday');
+      break;
+    case 7:
+      print('Sunday');
+      break;
+    default:
+      print('Invalid day');
+  }
+
+  // Switch-case with string
+  String grade = 'B';
+  switch (grade) {
+    case 'A':
+      print('Excellent');
+      break;
+    case 'B':
+      print('Good');
+      break;
+    case 'C':
+      print('Fair');
+      break;
+    case 'D':
+      print('Poor');
+      break;
+    case 'F':
+      print('Fail');
+      break;
+    default:
+      print('Invalid grade');
+  }
+
+  // Switch-case with fall-through
+  int _number = 2;
+  switch (_number) {
+    case 1:
+    case 2:
+    case 3:
+      print('Number is between 1 and 3');
+      break;
+    case 4:
+    case 5:
+    case 6:
+      print('Number is between 4 and 6');
+      break;
+    default:
+      print('Number is out of range');
+  }
 }
